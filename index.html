@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversário!</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Canvas Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body class="bg-zinc-950 text-white min-h-screen font-sans selection:bg-pink-500 selection:text-white">
+
+    <!-- Seção: Intro (Hero) -->
+    <section id="intro" class="h-screen flex flex-col items-center justify-center text-center p-6 relative bg-gradient-to-b from-zinc-900 to-zinc-950">
+        <div class="fade-in-section transition-all duration-1000 ease-out transform opacity-0 translate-y-20 flex flex-col items-center">
+            <i data-lucide="alert-triangle" class="w-12 h-12 text-yellow-500 mb-4"></i>
+            <h1 class="text-5xl md:text-7xl font-black mb-6 uppercase tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-zinc-100 to-zinc-500">
+                Feliz Aniversário!
+            </h1>
+            <p class="text-xl md:text-2xl text-zinc-400 max-w-2xl font-light">
+                Preparei uma homenagem sincera. Sem falsidade, sem texto meloso. Apenas fatos.
+            </p>
+        </div>
+        <div class="absolute bottom-10 animate-bounce text-zinc-500 flex flex-col items-center gap-2">
+            <span class="text-sm font-bold tracking-widest uppercase">Role por sua conta e risco</span>
+            <i data-lucide="chevron-down" class="w-6 h-6"></i>
+        </div>
+    </section>
+
+    <!-- Seção: Criança (index 1 - ímpar - flex-row-reverse) -->
+    <section id="crianca" class="min-h-screen flex items-center py-20 px-6 md:px-16 bg-gradient-to-b from-blue-900 to-zinc-900">
+        <div class="max-w-6xl mx-auto w-full flex flex-col md:flex-row-reverse items-center gap-12">
+            <!-- Imagem -->
+            <div class="w-full md:w-1/2 relative group">
+                <div class="fade-in-section transition-all duration-1000 ease-out transform opacity-0 translate-y-20 relative">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all duration-500 rounded-3xl z-10"></div>
+                    <img src="https://i.ibb.co/d45HMg4D/IMG-20260222-WA0003.jpg" alt="Foto A Era de Ouro" class="w-full h-auto max-h-[80vh] object-cover rounded-3xl shadow-2xl ring-1 ring-white/10 rotate-0 md:group-hover:rotate-2 transition-transform duration-500" loading="lazy">
+                </div>
+            </div>
+            <!-- Texto -->
+            <div class="w-full md:w-1/2 flex flex-col justify-center space-y-6">
+                <div class="fade-in-section transition-all duration-1000 ease-out transform opacity-0 translate-y-20">
+                    <div class="inline-flex items-center justify-center p-3 bg-white/5 rounded-2xl mb-4 backdrop-blur-sm border border-white/10">
+                        <i data-lucide="gift" class="w-8 h-8 text-blue-400"></i>
+                    </div>
+                    <h2 class="text-4xl md:text-6xl font-black tracking-tight mb-2">A Era de Ouro</h2>
+                    <div class="w-20 h-2 bg-white/20 rounded-full mb-6"></div>
+                    <p class="text-xl md:text-2xl text-zinc-300 leading-relaxed font-light">
+                        A prova documental de que um dia você já foi uma pessoa boa, gentil e bondosa. O que deu errado depois disso? A ciência ainda não conseguiu explicar kk.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: Julgadora (index 2 - par - flex-row) -->
+    <section id="julgadora" class="min-h-screen flex items-center py-20 px-6 md:px-16 bg-gradient-to-b from-amber-900 to-zinc-900">
+        <div class="max-w-6xl mx-auto w-full flex flex-col md:flex-row items-center gap-12">
+            <div class="w-full md:w-1/2 relative group">
+                <div class="fade-in-section transition-all duration-1000 ease-out transform opacity-0 translate-y-20 relative">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all duration-500 rounded-3xl z-10"></div>
+                    <img src="https://i.ibb.co/h1X1v1kW/IMG-20260222-WA0002.jpg" alt="Foto A Fase Julgadora" class="w-full h-auto max-h-[80vh] object-cover rounded-3xl shadow-2xl ring-1 ring-white/10 rotate-0 md:group-hover:rotate-2 transition-transform duration-500" loading="lazy">
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 flex flex-col justify-center space-y-6">
+                <div class="fade-in-section transition-all duration-1000 ease-out transform opacity-0 translate-y-20">
+                    <div class="inline-flex items-center justify-center p-3 bg-white/5 rounded-2xl mb-4 backdrop-blur-sm border border-white/10">
+                        <i data-lucide="coffee" class="w-8 h-8 text-amber-500"></i>
+                    </div>
+                    <h2 class="text-4xl md:text-6xl font-black tracking-tight mb-2">A Fase Julgadora</h2>
+                    <div class="w-20 h-2 bg-white/20 rounded-full mb-6"></div>
+                    <p class="text-xl md:text-2xl text-zinc-300 leading-relaxed font-light">
+                        A cara de quem está o tempo todo julgando as escolhas de vida dos outros. O pior é que na maioria das vezes você tem razão.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: Espelho (index 3 - ímpar - flex-row-reverse) -->
+    <section id="espelho" class="min-h-screen flex items-center py-20 px-6 md:px-16 bg-gradient-to-b from-purple-900 to-zinc-900">
+        <div class="max-w-6xl mx-auto w-full flex flex-col md:flex-row-reverse items-center gap-12">
+            <div class="w-full md:w-1/2 relative group">
+                <div class="fade-in-section transition-all duration-1000 ease-out transform opacity-0 translate-y-20 relative">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all duration-500 rounded-3xl z-10"></div>
+                    <img src="https://i.ibb.co/BV3mCTwK/IMG-20260222-WA0005.jpg" alt="Foto Alegria Contagiante" class="w-full h-auto max-h-[80vh] object-cover rounded-3xl shadow-2xl ring-1 ring-white/10 rotate-0 md:group-hover:rotate-2 transition-transform duration-500" loading="lazy">
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 flex flex-col justify-center space-y-6">
+                <div class="fade-in-section transition-all duration-1000 ease-out transform opacity-0 translate-y-20">
+                    <div class="inline-flex items-center justify-center p-3 bg-white/5 rounded-2xl mb-4 backdrop-blur-sm border border-white/10">
+                        <i data-lucide="skull" class="w-8 h-8 text-purple-500"></i>
+                    </div>
+                    <h2 class="text-4xl md:text-6xl font-black tracking-tight mb-2">Alegria Contagiante</h2>
+                    <div class="w-20 h-2 bg-white/20 rounded-full mb-6"></div>
+                    <p class="text-xl md:text-2xl text-zinc-300 leading-relaxed font-light">
+                        Aquela animação maravilhosa de quem preferia estar deitada no quarto assistindo série, mas foi obrigada a levantar e fingir sociabilidade.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: Familia (index 4 - par - flex-row) -->
+    <section id="familia" class="min-h-screen flex items-center py-20 px-6 md:px-16 bg-gradient-to-b from-emerald-900 to-zinc-900">
+        <div class="max-w-6xl mx-auto w-full flex flex-col md:flex-row items-center gap-12">
+            <div class="w-full md:w-1/2 relative group">
+                <div class="fade-in-section transition-all duration-1000 ease-out transform opacity-0 translate-y-20 relative">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all duration-500 rounded-3xl z-10"></div>
+                    <img src="https://i.ibb.co/DPZRcTM6/asdfghjkl.jpg" alt="Foto Fingindo Normalidade" class="w-full h-auto max-h-[80vh] object-cover rounded-3xl shadow-2xl ring-1 ring-white/10 rotate-0 md:group-hover:rotate-2 transition-transform duration-500" loading="lazy">
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 flex flex-col justify-center space-y-6">
+                <div class="fade-in-section transition-all duration-1000 ease-out transform opacity-0 translate-y-20">
+                    <div class="inline-flex items-center justify-center p-3 bg-white/5 rounded-2xl mb-4 backdrop-blur-sm border border-white/10">
+                        <i data-lucide="camera" class="w-8 h-8 text-emerald-500"></i>
+                    </div>
+                    <h2 class="text-4xl md:text-6xl font-black tracking-tight mb-2">Fingindo Normalidade</h2>
+                    <div class="w-20 h-2 bg-white/20 rounded-full mb-6"></div>
+                    <p class="text-xl md:text-2xl text-zinc-300 leading-relaxed font-light">
+                        O clássico sorriso de "estou sendo civilizada na foto de família para garantir que meu nome não saia do testamento". Estratégia impecável.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: Amigas Dia (index 5 - ímpar - flex-row-reverse) -->
+    <section id="amigas-dia" class="min-h-screen flex items-center py-20 px-6 md:px-16 bg-gradient-to-b from-pink-900 to-zinc-900">
+        <div class="max-w-6xl mx-auto w-full flex flex-col md:flex-row-reverse items-center gap-12">
+            <div class="w-full md:w-1/2 relative group">
+                <div class="fade-in-section transition-all duration-1000 ease-out transform opacity-0 translate-y-20 relative">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all duration-500 rounded-3xl z-10"></div>
+                    <img src="https://i.ibb.co/qFpjsG9d/IMG-20260222-WA0006.jpg" alt="Foto Pacto de Tolerância" class="w-full h-auto max-h-[80vh] object-cover rounded-3xl shadow-2xl ring-1 ring-white/10 rotate-0 md:group-hover:rotate-2 transition-transform duration-500" loading="lazy">
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 flex flex-col justify-center space-y-6">
+                <div class="fade-in-section transition-all duration-1000 ease-out transform opacity-0 translate-y-20">
+                    <div class="inline-flex items-center justify-center p-3 bg-white/5 rounded-2xl mb-4 backdrop-blur-sm border border-white/10">
+                        <i data-lucide="heart" class="w-8 h-8 text-pink-500"></i>
+                    </div>
+                    <h2 class="text-4xl md:text-6xl font-black tracking-tight mb-2">Pacto de Tolerância</h2>
+                    <div class="w-20 h-2 bg-white/20 rounded-full mb-6"></div>
+                    <p class="text-xl md:text-2xl text-zinc-300 leading-relaxed font-light">
+                        Aquele registro de quando a gente finge que se suporta 100% do tempo. (Na verdade, a gente só se junta para fofocar e falar mal dos outros).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: Amigas Noite (index 6 - par - flex-row) -->
+    <section id="amigas-noite" class="min-h-screen flex items-center py-20 px-6 md:px-16 bg-gradient-to-b from-red-900 to-zinc-900">
+        <div class="max-w-6xl mx-auto w-full flex flex-col md:flex-row items-center gap-12">
+            <div class="w-full md:w-1/2 relative group">
+                <div class="fade-in-section transition-all duration-1000 ease-out transform opacity-0 translate-y-20 relative">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all duration-500 rounded-3xl z-10"></div>
+                    <img src="https://i.ibb.co/twQH3W1s/IMG-20260222-WA0004.jpg" alt="Foto Modo Perigosa" class="w-full h-auto max-h-[80vh] object-cover rounded-3xl shadow-2xl ring-1 ring-white/10 rotate-0 md:group-hover:rotate-2 transition-transform duration-500" loading="lazy">
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 flex flex-col justify-center space-y-6">
+                <div class="fade-in-section transition-all duration-1000 ease-out transform opacity-0 translate-y-20">
+                    <div class="inline-flex items-center justify-center p-3 bg-white/5 rounded-2xl mb-4 backdrop-blur-sm border border-white/10">
+                        <i data-lucide="alert-triangle" class="w-8 h-8 text-red-500"></i>
+                    </div>
+                    <h2 class="text-4xl md:text-6xl font-black tracking-tight mb-2">Modo "Perigosa"</h2>
+                    <div class="w-20 h-2 bg-white/20 rounded-full mb-6"></div>
+                    <p class="text-xl md:text-2xl text-zinc-300 leading-relaxed font-light">
+                        Tentando passar a vibe de misteriosa e "não mexe comigo". A gente finge que acredita, mas sabe que você chora vendo vídeo de cachorro no TikTok.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: Footer -->
+    <section id="fim" class="min-h-[50vh] flex flex-col items-center justify-center text-center p-6 bg-zinc-950 border-t border-zinc-900">
+        <div class="fade-in-section transition-all duration-1000 ease-out transform opacity-0 translate-y-20">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">Apesar dos pesares...</h2>
+            <p class="text-lg md:text-xl text-zinc-400 max-w-xl mx-auto mb-8">
+                Feliz aniversário, prima! Que você continue exatamente assim (porque se piorar não tem quem aguente). Tamo junto! 🖤
+            </p>
+            <button id="confetti-btn" class="px-8 py-4 bg-white text-black font-bold rounded-full hover:bg-zinc-200 transition-colors shadow-[0_0_30px_rgba(255,255,255,0.2)]">
+                Clica aqui (ou não)
+            </button>
+        </div>
+    </section>
+
+    <!-- Scripts de Funcionalidade -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // 1. Inicializa os ícones da biblioteca Lucide
+            lucide.createIcons();
+
+            // 2. Configura a animação de Fade In durante o Scroll (Intersection Observer)
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.2 // Dispara quando 20% do elemento for visível
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Quando aparece na tela: remove as classes invisíveis e adiciona as visíveis
+                        entry.target.classList.remove('opacity-0', 'translate-y-20');
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                    }
+                });
+            }, observerOptions);
+
+            // Observa todos os elementos que possuem a classe de animação
+            document.querySelectorAll('.fade-in-section').forEach(element => {
+                observer.observe(element);
+            });
+
+            // 3. Configura a ação do botão de Confetes
+            const confettiBtn = document.getElementById('confetti-btn');
+            if (confettiBtn) {
+                confettiBtn.addEventListener('click', () => {
+                    confetti({
+                        particleCount: 100,
+                        spread: 70,
+                        origin: { y: 0.6 },
+                        colors: ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff']
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
